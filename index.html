@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nikhitha Balagani Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-image: url('images/bg_1.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Nikhitha Balagani</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+
+
+	  <section id="home-section" class="hero" style="position: relative;  height: 100vh; color: #fff;">
+		<div class="container h-100">
+		  <div class="row d-flex align-items-center h-100">
+			<!-- Profile Image -->
+			<div class="col-md-5 text-center">
+			  <div style="background-image: url('images/img3.png'); background-size: contain; background-repeat: no-repeat; background-position: center; height: 350px; width: 350px; border-radius: 50%; border: 6px solid rgba(255, 255, 255, 0.3); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); margin: 0 auto;"></div>
+			</div>
+			
+			<!-- Text Content -->
+			<div class="col-md-7">
+			  <span class="subheading" style="font-size: 1.2rem; font-weight: bold; color: #64ffda;">Hello There!</span>
+			  <h1 class="mb-4 mt-3" style="font-size: 3rem; font-weight: bold;">I'm <span style="color: #64ffda;">Nikhitha Balagani</span></h1>
+			  
+			  <!-- Typing Animation -->
+			  <div id="typing-animation" style="font-size: 1.5rem; font-weight: 500; color: #ffd700;"></div>
+	  
+			  <script>
+				// Initialize the typing animation
+				const typingAnimationElement = document.getElementById('typing-animation');
+				const typingTexts = ['Data Science Enthusiast', 'Developer', 'Problem Solver'];
+	  
+				function playTypingAnimation(text, index = 0) {
+				  if (index < text.length) {
+					typingAnimationElement.textContent += text[index];
+					setTimeout(() => playTypingAnimation(text, index + 1), 100);
+				  } else {
+					setTimeout(() => {
+					  typingAnimationElement.textContent = '';
+					  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+					}, 2000);
+				  }
+				}
+	  
+				playTypingAnimation(typingTexts[0]);
+			  </script>
+			  
+			  <p style="margin-top: 20px; font-size: 1.2rem;">A Passionate Data Scientist with a flair for creating impactful solutions.</p>
+			  
+			  <!-- Buttons -->
+			  <p class="mt-4">
+				<a href="https://drive.google.com/file/d/1WJwtnrvGQJrGkgxvyzsZO4fn0-xtj02X/view" 
+				   class="btn" 
+				   style="background: #64ffda; color: #000; font-weight: bold; padding: 12px 20px; border-radius: 5px; margin-right: 10px; text-decoration: none; transition: all 0.3s;">My CV</a>
+				
+				<a href="https://github.com/NikhithaBalagani?tab=repositories" 
+				   class="btn btn-outline" 
+				   style="border: 2px solid #64ffda; color: #64ffda; font-weight: bold; padding: 12px 20px; border-radius: 5px; margin-right: 10px; text-decoration: none; transition: all 0.3s;">My Works</a>
+				
+				<a href="https://medium.com/@nikhithabalagani98" 
+				   class="btn btn-outline" 
+				   style="border: 2px solid #64ffda; color: #64ffda; font-weight: bold; padding: 12px 20px; border-radius: 5px; text-decoration: none; transition: all 0.3s;">My Blogs</a>
+			  </p>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+		  <!-- About Me Section -->
+		  <div class="row justify-content-start pb-5">
+			<div class="col-md-12 heading-section ftco-animate text-center">
+			  <h2 class="mb-4" style="color: #64ffda;">About Me</h2>
+			  <h5 class="about-text" style="color: white;">
+				With over 5 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. 
+				Proficient in data analysis, statistical analysis, hypothesis testing, customer behaviour analysis, &amp; machine learning. 
+				Demonstrated success in leading impactful projects and providing effective mentorship
+			  </h5>
+			</div>
+		  </div>
+	  
+		
+			<!-- Interests Items -->
+			<div class="interests container" style="margin-top: 50px; text-align: center;">
+				<!-- Section Title -->
+				<h2 style="font-size: 2rem; font-weight: bold; color: #64ffda; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); margin-bottom: 30px;">
+				  Interests
+				</h2>
+			  
+				<!-- Interests Items -->
+				<div class="row" style="gap: 15px; justify-content: center; display: flex; flex-wrap: wrap;">
+				  <div style="background: linear-gradient(135deg, #ff6a00, #ee0979); color: white; padding: 10px 20px; border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; min-width: 120px; text-align: center; font-size: 0.9rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 5px 15px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+					<h3 style="margin: 0; font-size: 0.85rem;"><i class="ri-global-line" style="margin-right: 5px; font-size: 1rem;"></i>Data Science</h3>
+				  </div>
+				  <div style="background: linear-gradient(135deg, #42a5f5, #478ed1); color: white; padding: 10px 20px; border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; min-width: 120px; text-align: center; font-size: 0.9rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 5px 15px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+					<h3 style="margin: 0; font-size: 0.85rem;"><i class="ri-database-2-line" style="margin-right: 5px; font-size: 1rem;"></i>Machine Learning</h3>
+				  </div>
+				  <div style="background: linear-gradient(135deg, #ffecd2, #fcb69f); color: white; padding: 10px 20px; border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; min-width: 120px; text-align: center; font-size: 0.9rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 5px 15px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+					<h3 style="margin: 0; font-size: 0.85rem;"><i class="ri-camera-3-line" style="margin-right: 5px; font-size: 1rem;"></i>Computer Vision</h3>
+				  </div>
+				  <div style="background: linear-gradient(135deg, #00c6ff, #0072ff); color: white; padding: 10px 20px; border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; min-width: 120px; text-align: center; font-size: 0.9rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 5px 15px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+					<h3 style="margin: 0; font-size: 0.85rem;"><i class="ri-english-input" style="margin-right: 5px; font-size: 1rem;"></i>Natural Language Processing</h3>
+				  </div>
+				  <div style="background: linear-gradient(135deg, #66ffcc, #33cc99); color: white; padding: 10px 20px; border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; min-width: 120px; text-align: center; font-size: 0.9rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 5px 15px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+					<h3 style="margin: 0; font-size: 0.85rem;"><i class="ri-code-s-slash-fill" style="margin-right: 5px; font-size: 1rem;"></i>Software Engineering</h3>
+				  </div>
+				  <div style="background: linear-gradient(135deg, #ff758c, #ff7eb3); color: white; padding: 10px 20px; border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; min-width: 120px; text-align: center; font-size: 0.9rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 5px 15px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+					<h3 style="margin: 0; font-size: 0.85rem;"><i class="ri-bar-chart-box-line" style="margin-right: 5px; font-size: 1rem;"></i>Visualization</h3>
+				  </div>
+				  <div style="background: linear-gradient(135deg, #ff9a9e, #fecfef); color: white; padding: 10px 20px; border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; min-width: 120px; text-align: center; font-size: 0.9rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 5px 15px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+					<h3 style="margin: 0; font-size: 0.85rem;"><i class="ri-file-list-3-line" style="margin-right: 5px; font-size: 1rem;"></i>Algorithms</h3>
+				  </div>
+				  <div style="background: linear-gradient(135deg, #c3ec52, #71b280); color: white; padding: 10px 20px; border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; min-width: 120px; text-align: center; font-size: 0.9rem;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 5px 15px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+					<h3 style="margin: 0; font-size: 0.85rem;"><i class="ri-image-line" style="margin-right: 5px; font-size: 1rem;"></i>Image Processing</h3>
+				  </div>
+				</div>
+			  </div>
+
+		  </div>
+		</div>
+	  </section>
+
+
+
+<!---SKILLS SECTION -->
+
+<section id="skills-section" style="padding: 50px 0; overflow: hidden; position: relative;">
+	<div class="container">
+	  <div class="section-title" style="text-align: center; margin-bottom: 30px;">
+		<h2 style="font-size: 2.5rem; font-weight: bold; color: #64ffda; margin: 0;">Skills</h2>
+	  </div>
+	</div>
+  
+	<!-- Scrolling Skills Row -->
+	<div class="skills-wrapper" style="white-space: nowrap; overflow: hidden; position: relative;">
+	  <div class="skills-icons" style="display: inline-block;">
+		<!-- Skills Icons Set 1 -->
+		<div class="skills-content">
+		  <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" height="80" width="180" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="Java" height="80" width="150" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5" height="80" style="margin: 0 30px;">
+		  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" height="90" width="120" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL" height="90" width="160" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="PostgreSQL" height="80" width="220" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg" alt="Flask" height="80" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django" height="80" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="Node.js" height="80" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap" height="80" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow" height="80" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="PyTorch" height="80" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg" alt="OpenCV" height="80" style="margin: 0 30px;">
+		  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" width="120" height="90" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git" height="80" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="AWS" height="80" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="Google Cloud" height="80" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" alt="Heroku" height="80" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter" height="80" style="margin: 0 30px;">
+		</div>
+		<!-- Duplicate Skills Icons Set for Seamless Scrolling -->
+		<div class="skills-content">
+		  <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" height="80" width="180" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="Java" height="80" width="150" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5" height="80" style="margin: 0 30px;">
+		  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" height="90" width="120" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL" height="90" width="160" style="margin: 0 30px;">
+		  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="PostgreSQL" height="80" width="220" style="margin: 0 30px;">
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  <style>
+  /* Keyframes for Seamless Scrolling */
+  @keyframes scroll {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  /* Skills Animation */
+  .skills-content {
+	display: inline-block;
+	white-space: nowrap;
+  }
+  
+  .skills-icons {
+	display: flex;
+	animation: scroll 50s linear infinite; /* Adjust speed by changing 50s */
+  }
+  </style>
+	
+<!--- END SKILLS SECTION -->
+
+
+
+<!---EXPERIENCE TIME LINE-->
+
+<section id="experience-section" style="padding: 50px 0; color: #fff;">
+	<div class="container">
+	  <div class="section-title" style="text-align: center; margin-bottom: 30px;">
+		<h2 style="font-size: 2.5rem; font-weight: bold; color: #64ffda; margin: 0;">Experience</h2>
+	  </div>
+  
+	  <div class="timeline" style="position: relative; max-width: 800px; margin: auto;">
+		<!-- Vertical Line -->
+		<div style="position: absolute; left: 50%; transform: translateX(-50%); width: 4px; background-color: #fff; height: 100%;"></div>
+  
+		<!-- Entry 1 -->
+		<div style="position: relative; margin: 15px 0;">
+			<!-- The box -->
+			<div style="position: relative; left: 10%; text-align: right; padding: 15px; width: 40%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+			  <h3 style="margin: 0; font-size: 1.2rem; font-weight: 600; color: #ffd700;">Optum, Data Scientist</h3>
+			 
+			  <p style="margin: 5px 0; font-size: 0.9rem; color: #ffffff;">Remote, USA</p>
+			  <p style="margin: 5px 0; font-size: 0.8rem; color: #ffffff;">May 2023 – April 2024</p>
+			</div>
+			
+			<!-- The timeline dot -->
+			<div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 10px; height: 10px; background-color: #fff; border: 2px solid #4a4ae6; border-radius: 50%;"></div>
+		  </div>
+  
+		<!-- Entry 2 -->
+		<div style="position: relative; margin: 20px 0;">
+		  <div style="position: relative; left: 50%; text-align: left; padding: 20px; width: 45%; border-radius: 8px;">
+			<h3 style="margin: 0; font-size: 1.2rem; color: #ffd700;">ValueLabs, Data Analyst II</h3>
+			<p style="margin: 5px 0; color: #ffffff;">Hyderabad, India</p>
+			<p style="margin: 5px 0; font-size: 0.9rem; color: #ffffff;">May 2021 – Aug 2022</p>
+		  </div>
+		  <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 12px; height: 12px; background-color: #fff; border-radius: 50%;"></div>
+		</div>
+  
+		<!-- Entry 3 -->
+		<div style="position: relative; margin: 20px 0;">
+		  <div style="position: relative; left: 5%; text-align: right; padding: 20px; width: 45%; border-radius: 8px;">
+			<h3 style="margin: 0; font-size: 1.2rem; color: #ffd700;">ValueLabs, Data Analyst</h3>
+			<p style="margin: 5px 0; color: #ffffff;">Hyderabad, India</p>
+			<p style="margin: 5px 0; font-size: 0.9rem; color: #ffffff;">Sep 2019 – May 2021</p>
+		  </div>
+		  <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 12px; height: 12px; background-color: #fff; border-radius: 50%;"></div>
+		</div>
+  
+		<!-- Entry 4 -->
+		<div style="position: relative; margin: 20px 0;">
+		  <div style="position: relative; left: 50%; text-align: left; padding: 20px; width: 45%; border-radius: 8px;">
+			<h3 style="margin: 0; font-size: 1.2rem; color: #ffd700;">Technocolabs, ML Intern</h3>
+			<p style="margin: 5px 0 color: #ffffff;">Hyderabad, India</p>
+			<p style="margin: 5px 0; font-size: 0.9rem; color: #ffffff;">May 2019 – Dec 2019</p>
+		  </div>
+		  <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 12px; height: 12px; background-color: #fff; border-radius: 50%;"></div>
+		</div>
+<!-- Entry 5 -->
+<div style="position: relative; margin: 20px 0;">
+	<div style="position: relative; left: 5%; text-align: right; padding: 20px; width: 45%; border-radius: 8px;">
+	  <h3 style="margin: 0; font-size: 1.2rem; color: #ffd700;">IIT Kanpur, AI Intern</h3>
+	  <p style="margin: 5px 0; color: #ffffff;">Kanpur, India</p>
+	  <p style="margin: 5px 0; font-size: 0.9rem; color: #ffffff;">May 2018 – Oct 2018</p>
+	</div>
+	<div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 12px; height: 12px; background-color: #fff; border-radius: 50%;"></div>
+  </div>
+		
+	  </div>
+	</div>
+  </section>
+<!--- END EXPERIENCE TIME LINE-->
+
+   
+
+
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4" style ="color: #64ffda;" >Projects</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/NikhithaBalagani/DIGITAL-LOCKSMITH" class="block-20 zoom-effect" style="background-image: url('images/DigitalLocksmith.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/NikhithaBalagani/Student-Course-Management-System">End to End Digital Locksmith Project</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/NikhithaBalagani/Student-Course-Management-System" class="block-20 zoom-effect" style="background-image: url('images/student.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/NikhithaBalagani/Student-Course-Management-System">Student Course Management System</a></h3>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/NikhithaBalagani/AGRICULTURE-FIELD-MONITORING-SYSTEM" class="block-20 zoom-effect" style="background-image: url('images/Agriculture.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/NikhithaBalagani/AGRICULTURE-FIELD-MONITORING-SYSTEM"> Agriculture Field Monitoring System</a></h3>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate" style="margin-top: -25px;">
+				<div class="blog-entry justify-content-end">
+				  <a href="https://github.com/NikhithaBalagani/AI-MOBILE-ROBOT" 
+					 class="block-20 zoom-effect" 
+					 style="background-image: url('images/airobot.png'); 
+							background-size: contain; 
+							background-repeat: no-repeat; 
+							background-position: center; 
+							width: 300px; 
+							height: 250px; 
+							display: block; 
+							margin: 0 auto; 
+							border-radius: 10px;">
+				  </a>
+				  <div class="text mt-3 float-right d-block text-center">
+					<h3 class="heading" style="font-size: 1.2rem; font-weight: color: #fff;">
+					  <a href="https://github.com/NikhithaBalagani/AI-MOBILE-ROBOT">AI Mobile Robot</a>
+					</h3>
+				  </div>
+				</div>
+			  </div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/NikhithaBalagani/Sign-Language-Detection" class="block-20 zoom-effect" style="background-image: url('images/Sign.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/NikhithaBalagani/Sign-Language-Detection">AI Sign Language Detection</a></h3>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	</section>
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center">
+			  <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 20px; color: #64ffda;">Let's Connect</h2>
+			</div>
+		  </div>
+	  
+		  <div class="row d-flex justify-content-center mb-5">
+			<!-- Address Block -->
+			<div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+			  <div class="box p-4 text-center" style="background: #162447; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); position: relative;">
+				<div class="icon mb-3" style="width: 60px; height: 60px; margin: 0 auto; background: #29314a; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; top: -30px; left: 50%; transform: translateX(-50%);">
+				  <span class="icon-map-signs" style="font-size: 1.8rem; color: #4caf50;"></span>
+				</div>
+				<h3 style="margin-top: 40px; font-size: 1.2rem; font-weight: bold;">Address</h3>
+				<p style="color: #ddd;">Fairfax, Virginia</p>
+			  </div>
+			</div>
+	  
+			<!-- Contact Number Block -->
+			<div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+			  <div class="box p-4 text-center" style="background: #162447; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); position: relative;">
+				<div class="icon mb-3" style="width: 60px; height: 60px; margin: 0 auto; background: #29314a; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; top: -30px; left: 50%; transform: translateX(-50%);">
+				  <span class="icon-phone2" style="font-size: 1.8rem; color: #ff5722;"></span>
+				</div>
+				<h3 style="margin-top: 40px; font-size: 1.2rem; font-weight: bold;">Contact Number</h3>
+				<p style="color: #ddd;"><a href="tel://7039011205" style="color: #ddd; text-decoration: none;">+1 703-901-1205</a></p>
+			  </div>
+			</div>
+	  
+			<!-- Email Address Block -->
+			<div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+			  <div class="box p-4 text-center" style="background: #162447; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); position: relative;">
+				<div class="icon mb-3" style="width: 60px; height: 60px; margin: 0 auto; background: #29314a; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; top: -30px; left: 50%; transform: translateX(-50%);">
+				  <span class="icon-paper-plane" style="font-size: 1.8rem; color: #03a9f4;"></span>
+				</div>
+				<h3 style="margin-top: 40px; font-size: 1.2rem; font-weight: bold;">Email Address</h3>
+				<p style="color: #ddd;"><a href="mailto:nikhithabalagani98@gmail.com" style="color: #ddd; text-decoration: none; word-break: break-word;">nikhithabalagani98@gmail.com</a></p>
+			  </div>
+			</div>
+			<!-- Email Address Block -->
+            <!-- LinkedIn Block -->
+<div class="col-md-4 col-lg-3 d-flex align-items-stretch">
+	<div class="box p-4 text-center" style="background: #162447; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); position: relative;">
+	  <div class="icon mb-3" style="width: 60px; height: 60px; margin: 0 auto; background: #29314a; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; top: -30px; left: 50%; transform: translateX(-50%);">
+		<span class="icon-linkedin" style="font-size: 1.8rem; color: #0e76a8;"></span>
+	  </div>
+	  <h3 style="margin-top: 40px; font-size: 1.2rem; font-weight: bold;">LinkedIn</h3>
+	  <p>
+		<a href="https://www.linkedin.com/in/nikki2024" target="_blank" style="color: #ddd; text-decoration: none;">View Profile</a>
+	  </p>
+	</div>
+  </div>
+  </div>
+		  </div>
+	  
+		  <!-- Button -->
+		  <div class="row justify-content-center mt-5">
+			<div class="col-md-7 text-center">
+			  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 20px;">Have a Question?</h2>
+			  <a href="https://forms.gle/zM9pMQ11BZFjydfy5" class="btn" style="background: #f8c147; color: #000; font-size: 1.2rem; font-weight: bold; padding: 10px 20px; border-radius: 8px; text-decoration: none;">Click Here</a>
+			</div>
+		  </div>
+
+
+		</div>
+	  </section>
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
